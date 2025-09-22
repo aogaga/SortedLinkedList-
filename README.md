@@ -1,4 +1,4 @@
-# SortedLinkedList PHP Project
+# Composer Library: SortedLinkedList Implementation
 
 This project implements a **doubly sorted linked list** in PHP. Features include:
 
