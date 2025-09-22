@@ -1,0 +1,7 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon  # optional, for latest rules
+
+parameters:
+    level: max
+    paths:
+        - src
