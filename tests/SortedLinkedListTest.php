@@ -6,6 +6,17 @@ use PHPUnit\Framework\TestCase;
 use Aogaga\LinkedList\SortedLinkedList;
 use Aogaga\LinkedList\Node;
 
+/**
+ * Class SortedLinkedListTest
+ * *
+ * * Unit tests for the SortedLinkedList class.
+ * * Tests insertion, removal, search, and conversion to array in a doubly sorted linked list.
+ * *
+ *
+ * @package Aogaga\LinkedList
+ * @author Ogheneogaga Fidelis Agi
+ * @email aogaga@gmail.com
+ */
 class SortedLinkedListTest extends TestCase
 {
     private SortedLinkedList $list;

@@ -2,6 +2,16 @@
 
 namespace Aogaga\LinkedList;
 
+/**
+ * Class SortedLinkedList
+ *
+ * A doubly linked list that maintains its elements in sorted order.
+ * Supports insertion, removal, search, and conversion to an array.
+ *
+ * @package Aogaga\LinkedList
+ * @author Ogheneogaga Fidelis Agi
+ * @email aogaga@gmail.com
+ */
 class SortedLinkedList implements SortedLinkedListInterface
 {
     private ?Node $head = null;
@@ -13,7 +23,6 @@ class SortedLinkedList implements SortedLinkedListInterface
         $node = new Node($val);
 
         if ($this->head === null || $val < $this->head->val) {
-
             $node->next = $this->head;
             if ($this->head !== null) {
                 $this->head->prev = $node;
@@ -24,7 +33,6 @@ class SortedLinkedList implements SortedLinkedListInterface
                 $this->tail = $node;
             }
         } else {
-
             $current = $this->head;
             while ($current->next !== null && $current->next->val < $val) {
                 $current = $current->next;
